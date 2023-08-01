@@ -1,0 +1,29 @@
+<!DOCTYPE HTML><html><body>  <p>Before the script...</p>
+  <script>
+	let s = "my" + "string"; alert(s); // mystring
+	//String concatenation and conversion is a 
+	//special feature of the binary plus +
+	alert( '1' + 2 ); // "12"
+	alert( 2 + '1' ); // "21"
+	alert(2 + 2      + '1' ); // "41" and not "221"
+//		|        |
+//	 binary add    convert and concat
+	alert('1' + 2      + 2 ); // "14" expected but found "122"
+	let i=10;	alert(i);i++;		alert(i);  alert(++i);
+
+	alert( 2 - '1' ); // 1
+	alert( '6' / '2' ); // 3
+
+	let x = 1;	alert( +x ); // 1
+	let y = -2;	alert( +y ); // -2
+
+	// Converts non-numbers
+	alert( +true ); // 1
+	alert( +"" );   // 0
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
